@@ -7,22 +7,22 @@ const projectId = 'e613dc134c70bb16ad98f96dde9893f7'
 const metadata = {
   name: 'My Web3 DApp',
   description: 'Web3 Wallet Connection',
-  url: 'http://localhost:5173', // ✅ LOCAL FOR NOW
+  url: 'http://localhost:5173', // OK for dev & Vercel
   icons: ['https://avatars.githubusercontent.com/u/37784886'],
 }
 
 const chains = [mainnet, polygon, arbitrum, optimism, sepolia]
 
-const config = defaultWagmiConfig({
+export const wagmiConfig = defaultWagmiConfig({
   chains,
   projectId,
   metadata,
 })
 
 createWeb3Modal({
-  wagmiConfig: config,
+  wagmiConfig,
   projectId,
   chains,
 })
 
-export default config
+export default wagmiConfig

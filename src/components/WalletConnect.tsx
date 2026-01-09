@@ -118,11 +118,10 @@ const WalletConnect = () => {
                       Balance
                     </p>
                     <p className="text-xl font-bold text-purple-600">
-                      {balance
-                        ? `${parseFloat(balance.formatted).toFixed(4)} ${
-                            balance.symbol
-                          }`
-                        : '0 ETH'}
+                    {balance
+  ? `${Number(balance.value) / 10 ** balance.decimals} ${balance.symbol}`
+  : '0 ETH'}
+
                     </p>
                   </div>
                 </div>

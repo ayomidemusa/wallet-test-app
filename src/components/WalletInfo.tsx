@@ -57,7 +57,7 @@ const WalletInfo = () => {
               <p className="text-xl font-bold">
                 {isLoading
                   ? 'Loading...'
-                  : `${Number(balance?.formatted).toFixed(4)} ${balance?.symbol}`
+                  : `${Number(balance?.value).toFixed(4)} ${balance?.symbol}`
                 }
               </p>
             </div>
