@@ -9,7 +9,7 @@ const projectId = 'e613dc134c70bb16ad98f96dde9893f7'
 const metadata = {
   name: 'My Web3 DApp',
   description: 'Web3 Wallet Connection',
-  url: 'https://wallet-test-run.vercel.app', // your Vercel URL later
+  url: 'https://wallet-test-appz.vercel.app', // your Vercel URL later
   icons: ['https://avatars.githubusercontent.com/u/37784886'],
 }
 
